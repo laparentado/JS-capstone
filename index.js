@@ -21,6 +21,7 @@ games.push(word1,word2
 )
 console.log(games)
 
+
 //shows hint on the screen
 function hinting(){
   for(i=0; i<games.length;i++){
@@ -30,29 +31,25 @@ function hinting(){
 hinting()
 
 function wording(){
+  // var guesses = []
+  // guesses.push(guess.value)
+  var usedLetters = []
+
   for(i=0; i<games.length;i++){
     var split = games[i].word.split("")
+    if(split[i] == guess.value){
+    word.innerHTML += guess.value
+
+    }else{
+    used.innerHTML = guess.value
+    }
   }
-  if(guess.value === split){
-  word.innerHTML = guess.value
-  }else{
-  used.innerHTML = guess.value
-  }
+
+  console.log(guess.value)
+  console.log(split)
+
 }
 
-// for(i=0; i<games.length;i++){
-//   for(j=0; j<guess.value.length; j++){
-//   var split = games[i].word.split("")
-//   console.log(split)
-//
-//   if(guess.value === split[i]){
-//     word.innerHTML = guess.value
-//     used.innerHTML = guess.value
-//   }else{
-//     used.innerHTML = guess.value
-//   }
-// }
-// }
 
 submit.addEventListener("click", function(){
 wording()
