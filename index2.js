@@ -20,14 +20,14 @@ var answer = ""
 var guessedLetters = []
 
 var randomWord = Math.floor(Math.random()* words.length)
-console.log(words[randomWord].split(""))
+var letterArray = words[randomWord].toLowerCase().split("")
+console.log(letterArray)
 
-function showHint(){
-  var dashes = words[randomWord].replace(/[a-z]/gi,"- ")
-  hint.innerHTML = hints[randomWord]
-  word.innerHTML = dashes
-}
-showHint()
+var dashes = letterArray.map(function(x){return "_"})
+console.log(dashes)
+hint.innerHTML = hints[randomWord]
+word.innerHTML = dashes.join(" ")
+
 
 var letterWrapper = document.createElement("div")
 letterWrapper.style.margin = '0 auto'
@@ -47,17 +47,28 @@ for(let i=0; i<alphabet.length;i++){
   letterWrapper.appendChild(alpha)
   var boxes = document.getElementsByClassName("letter")
 
-  boxes[i].addEventListener("click", function(event){
-    answer = event.target.innerHTML
-    if(guessedLetters.indexOf(answer) !==-1){
+  boxes[i].addEventListener("click", function(){
+    // answer = event.target.innerHTML
+    if(guessedLetters.indexOf(boxes[i].innerHTML) !==-1){
       console.log("already guessed")
-    }else if(words[randomWord].indexOf(answer) !==-1){
-      word.innerHTML +=answer
-      guessedLetters.push(answer)
-      used.innerHTML = guessedLetters
+    }else {
+
+
+      if(letterArray.includes(boxes[i].innerHTML)){
+      for(let j=0; j<letterArray.length;j++){
+        if(letterArray[j] === boxes[i].innerHTML){
+        dashes.splice(j, 1, boxes[i].innerHTML)
+        }
+      }
+      word.innerHTML = dashes.join(" ")
     }else{
-      guessedLetters.push("<b>"+answer+"</b>")
-      used.innerHTML = guessedLetters
+      alert("you win")
+      window.location.reload(true)
+
   }
+  guessedLetters.push(boxes[i].innerHTML)
+  used.innerHTML = guessedLetters
+
+}
   })
 }
