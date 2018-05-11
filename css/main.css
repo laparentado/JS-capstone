@@ -1,22 +1,22 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border: 1px solid #618685;
+  border: 1px solid #362E32;
   width: 850px;
   height: 400px;
-  background-color: whitesmoke; }
+  background-color: #DAD9D5; }
 
 .letter {
-  background-color: #d5f4e6;
-  border: 1px solid #618685;
+  background-color: #058A8D;
+  border: 1px solid #362E32;
   border-radius: 20px;
   width: 48px;
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
   padding: 5px;
-  font-family: nunito;
-  color: dimgrey;
+  font-family: cutive mono;
+  color: #F4D38F;
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
@@ -47,67 +47,71 @@
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 1px solid #618685;
+  border: 1px solid #362E32;
   width: 400px;
   margin-left: 5px;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   font-family: nunito;
-  background-color: white; }
+  font-size: 18px;
+  background-color: #75B8BC; }
 
 .reload {
-  background-color: #d5f4e6;
-  border: 1px solid #618685;
+  background-color: #058A8D;
+  border: 1px solid #362E32;
   font-family: Codystar;
-  color: dimgrey;
+  color: #F4D38F;
   width: 200px;
   height: 30px;
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 70px;
   border-radius: 12px;
   letter-spacing: 2px; }
 
 .title4 {
   font-family: Codystar;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 275px;
+  margin-left: 130px;
   width: 30px; }
 
 .score {
   font-family: nunito;
   font-size: 25px;
-  border: 1px solid;
+  border: 1px solid #362E32;
+  background-color: #75B8BC;
   width: 20px;
   height: 35px;
   position: absolute;
-  margin-left: 100px;
-  margin-top: 350px; }
+  margin-left: 240px;
+  margin-top: 275px; }
 
 .hint {
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
   grid-row-end: 3;
-  border: 1px solid #618685;
+  border: 1px solid #362E32;
   width: 400px;
   margin-left: 5px;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   font-family: nunito;
-  background-color: white; }
+  font-size: 18px;
+  background-color: #75B8BC; }
 
 .used {
   grid-column-start: 2;
   grid-column-end: 3;
-  border: 1px solid #618685;
+  border: 1px solid #362E32;
   width: 400px;
   height: 100px;
   margin: 5px 5px 5px 5px;
   font-family: nunito;
   text-align: center;
-  background-color: white; }
+  background-color: #75B8BC; }
 
 .title3 {
   font-family: Codystar;

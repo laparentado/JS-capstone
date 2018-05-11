@@ -8,9 +8,10 @@
   margin-left: 5px;
   text-align: center;
   padding-top: 50px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
   font-family: $main-font;
-  background-color: white;
+  font-size:18px;
+  background-color: $box-color;
 }
 
 .reload{
@@ -21,7 +22,7 @@
   width: 200px;
   height: 30px;
   margin-left: 100px;
-  margin-top: 40px;
+  margin-top: 70px;
   border-radius: 12px;
   letter-spacing: 2px;
 }
@@ -29,16 +30,18 @@
 .title4{
   font-family: $secondary-font;
   position: absolute;
-  margin-top: 350px;
+  margin-top: 275px;
+  margin-left: 130px;
   width: 30px;
 }
 .score{
   font-family: $main-font;
   font-size: 25px;
-  border: 1px solid;
+  border: 1px solid $border-color;
+  background-color: $box-color;
   width: 20px;
   height: 35px;
   position: absolute;
-  margin-left: 100px;
-  margin-top: 350px;
+  margin-left: 240px;
+  margin-top: 275px;
 }
