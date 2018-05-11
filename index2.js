@@ -2,6 +2,7 @@ var hint = document.getElementsByClassName("hint")[0];
 var word = document.getElementsByClassName("word")[0];
 var used = document.getElementsByClassName("used")[0];
 var guess = document.getElementsByClassName("guess")[0];
+var reload = document.getElementsByClassName("reload")[0]
 
 function Words(word, hint){
   this.word = word;
@@ -11,11 +12,12 @@ function Words(word, hint){
 var word1 = new Words("hello", "common greeting")
 var word2 = new Words("hat", "headwear")
 var word3 = new Words("word","duh")
+var word4 = new Words("dog", "man's best friend")
 
 var words=[]
-words.push(word1.word, word2.word, word3.word)
+words.push(word1.word, word2.word, word3.word, word4.word)
 var hints=[]
-hints.push(word1.hint, word2.hint, word3.hint)
+hints.push(word1.hint, word2.hint, word3.hint, word4.hint)
 var answer = ""
 var guessedLetters = []
 
@@ -61,9 +63,8 @@ for(let i=0; i<alphabet.length;i++){
         }
       }
       word.innerHTML = dashes.join(" ")
+
     }else{
-      alert("you win")
-      window.location.reload(true)
 
   }
   guessedLetters.push(boxes[i].innerHTML)
@@ -72,3 +73,6 @@ for(let i=0; i<alphabet.length;i++){
 }
   })
 }
+reload.addEventListener("click", function(){
+  window.location.reload(true)
+})

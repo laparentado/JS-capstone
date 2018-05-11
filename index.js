@@ -4,11 +4,7 @@ var used = document.getElementsByClassName("used")[0];
 var guess = document.getElementsByClassName("guess")[0];
 var submit = document.getElementsByClassName("submit")[0];
 
-var letterWrapper = document.createElement("div")
-letterWrapper.style.width = "90%";
-letterWrapper.style.margin = '0 auto'
-letterWrapper.style.border = '1px solid'
-document.body.appendChild(letterWrapper)
+
 
 
 function Words(word, hint){
