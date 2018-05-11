@@ -14,11 +14,16 @@ var word2 = new Words("hat", "trick performed by hockey player scoring 3 goals")
 var word3 = new Words("word","being replaced by google docs")
 var word4 = new Words("dog", "may be found in a pound")
 var word5 = new Words("waiter", "one taking orders")
+var word6 = new Words("prodigy", "someone with a gift")
+var word7 = new Words("fear", "is the mind killer")
+var word8 = new Words("shaker","has holes in it's head without a lobotomy")
+var word9 = new Words ("lemon", "vehicle gone sour")
+var word10 = new Words("moon", "can be full, blue, or made of cheese")
 
 var words=[]
-words.push(word1.word, word2.word, word3.word, word4.word, word5.word)
+words.push(word1.word, word2.word, word3.word, word4.word, word5.word, word6.word, word7.word, word8.word, word9.word, word10.word)
 var hints=[]
-hints.push(word1.hint, word2.hint, word3.hint, word4.hint, word5.hint)
+hints.push(word1.hint, word2.hint, word3.hint, word4.hint, word5.hint, word6.hint, word7.hint, word8.hint, word9.hint, word10.hint)
 var answer = ""
 var guessedLetters = []
 
@@ -33,7 +38,8 @@ word.innerHTML = dashes.join(" ")
 
 
 var letterWrapper = document.createElement("div")
-letterWrapper.style.width = "840px"
+letterWrapper.style.width = "850px"
+letterWrapper.style.position = "absolute"
 // letterWrapper.style.border = '1px solid #618685'
 // letterWrapper.style.backgroundColor = "whitesmoke"
 document.body.appendChild(letterWrapper)

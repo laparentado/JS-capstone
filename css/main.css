@@ -2,13 +2,15 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid #618685;
-  width: 835px;
+  width: 850px;
+  height: 400px;
   background-color: whitesmoke; }
 
 .letter {
   background-color: #d5f4e6;
   border: 1px solid #618685;
-  width: 50px;
+  border-radius: 20px;
+  width: 48px;
   display: inline-block;
   text-transform: uppercase;
   text-align: center;
@@ -18,14 +20,28 @@
   font-size: 20px;
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 1px;
-  margin-right: 1px; }
+  margin-left: 5px;
+  margin-right: 0px; }
 
 .header {
   font-family: georgia;
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 3; }
+
+.title1 {
+  position: absolute;
+  margin-left: 190px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #618685; }
+
+.title2 {
+  position: absolute;
+  margin-left: 600px;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #618685; }
 
 .word {
   grid-column-start: 1;
@@ -49,7 +65,7 @@
   width: 200px;
   height: 30px;
   margin-left: 100px;
-  margin-top: 25px;
+  margin-top: 50px;
   border-radius: 12px; }
 
 .hint {
@@ -69,11 +85,22 @@
 .used {
   grid-column-start: 2;
   grid-column-end: 3;
-  height: 75px;
   border: 1px solid #618685;
   width: 400px;
+  height: 100px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin: 5px 5px 5px 5px;
   font-family: helvetica;
   background-color: white; }
+
+.title3 {
+  position: absolute;
+  margin-top: 300px;
+  margin-left: 375px;
+  text-align: right;
+  font-size: 20px;
+  text-decoration: underline;
+  text-decoration-color: #618685; }
 
 /*# sourceMappingURL=main.css.map */
