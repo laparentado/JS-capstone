@@ -16,11 +16,29 @@
 .reload{
   background-color: $button-color;
   border: 1px solid $border-color;
-  font-family: $main-font;
+  font-family: $secondary-font;
   color: $text-color;
   width: 200px;
   height: 30px;
   margin-left: 100px;
-  margin-top: 50px;
+  margin-top: 40px;
   border-radius: 12px;
+  letter-spacing: 2px;
+}
+
+.title4{
+  font-family: $secondary-font;
+  position: absolute;
+  margin-top: 350px;
+  width: 30px;
+}
+.score{
+  font-family: $main-font;
+  font-size: 25px;
+  border: 1px solid;
+  width: 20px;
+  height: 35px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 350px;
 }

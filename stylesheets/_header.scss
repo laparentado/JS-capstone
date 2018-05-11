@@ -3,20 +3,19 @@
   text-align: center;
   grid-column-start: 1;
   grid-column-end: 3;
+  letter-spacing: 15px;
 }
 
 .title1{
   position: absolute;
-  margin-left: 190px;
+  letter-spacing: 0px;
+  margin-left: 180px;
   font-size: 20px;
-  text-decoration: underline;
-  text-decoration-color: $border-color;
 }
 
 .title2{
   position: absolute;
+  letter-spacing: 0px;
   margin-left: 600px;
   font-size: 20px;
-  text-decoration: underline;
-  text-decoration-color: $border-color;
 }

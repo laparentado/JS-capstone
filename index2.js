@@ -2,7 +2,10 @@ var hint = document.getElementsByClassName("hint")[0];
 var word = document.getElementsByClassName("word")[0];
 var used = document.getElementsByClassName("used")[0];
 var guess = document.getElementsByClassName("guess")[0];
-var reload = document.getElementsByClassName("reload")[0]
+var reload = document.getElementsByClassName("reload")[0];
+var score = document.getElementsByClassName("score")[0];
+
+var currentScore = 3;
 
 function Words(word, hint){
   this.word = word;
@@ -11,13 +14,13 @@ function Words(word, hint){
 
 var word1 = new Words("hello", "pick up line?")
 var word2 = new Words("hat", "trick performed by hockey player scoring 3 goals")
-var word3 = new Words("word","being replaced by google docs")
+var word3 = new Words("lemon","subpar vehicle")
 var word4 = new Words("dog", "may be found in a pound")
 var word5 = new Words("waiter", "one taking orders")
 var word6 = new Words("prodigy", "someone with a gift")
-var word7 = new Words("fear", "is the mind killer")
+var word7 = new Words("werewolf", "lycanthrope / loup garou / movie monster")
 var word8 = new Words("shaker","has holes in it's head without a lobotomy")
-var word9 = new Words ("lemon", "vehicle gone sour")
+var word9 = new Words ("priest", "has a mass audience?")
 var word10 = new Words("moon", "can be full, blue, or made of cheese")
 
 var words=[]
@@ -64,15 +67,21 @@ for(let i=0; i<alphabet.length;i++){
       for(let j=0; j<letterArray.length;j++){
         if(letterArray[j] === boxes[i].innerHTML){
         dashes.splice(j, 1, boxes[i].innerHTML)
+
+
         }
       }
       word.innerHTML = dashes.join(" ")
 
     }else{
-
+      score.innerHTML = currentScore--;
+      if(score.innerHTML == 0){
+        window.location.reload(true)
+      }
   }
   guessedLetters.push(boxes[i].innerHTML)
   used.innerHTML = guessedLetters
+
 
 }
   })
