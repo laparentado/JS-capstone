@@ -9,15 +9,16 @@ function Words(word, hint){
   this.hint = hint;
 }
 
-var word1 = new Words("hello", "common greeting")
-var word2 = new Words("hat", "headwear")
-var word3 = new Words("word","duh")
-var word4 = new Words("dog", "man's best friend")
+var word1 = new Words("hello", "pick up line?")
+var word2 = new Words("hat", "trick performed by hockey player scoring 3 goals")
+var word3 = new Words("word","being replaced by google docs")
+var word4 = new Words("dog", "may be found in a pound")
+var word5 = new Words("waiter", "one taking orders")
 
 var words=[]
-words.push(word1.word, word2.word, word3.word, word4.word)
+words.push(word1.word, word2.word, word3.word, word4.word, word5.word)
 var hints=[]
-hints.push(word1.hint, word2.hint, word3.hint, word4.hint)
+hints.push(word1.hint, word2.hint, word3.hint, word4.hint, word5.hint)
 var answer = ""
 var guessedLetters = []
 
@@ -32,18 +33,15 @@ word.innerHTML = dashes.join(" ")
 
 
 var letterWrapper = document.createElement("div")
-letterWrapper.style.margin = '0 auto'
-letterWrapper.style.border = '1px solid'
+letterWrapper.style.width = "840px"
+// letterWrapper.style.border = '1px solid #618685'
+// letterWrapper.style.backgroundColor = "whitesmoke"
 document.body.appendChild(letterWrapper)
 
 var alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 
 for(let i=0; i<alphabet.length;i++){
   var alpha = document.createElement("div")
-  alpha.style.width ="20px"
-  alpha.style.border =  "1px solid"
-  alpha.style.display = "inline-block"
-  alpha.style.textTransform = "uppercase"
   alpha.classList.add("letter")
   alpha.innerHTML = alphabet[i]
   letterWrapper.appendChild(alpha)

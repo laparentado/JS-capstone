@@ -1,3 +1,79 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid #618685;
+  width: 835px;
+  background-color: whitesmoke; }
 
+.letter {
+  background-color: #d5f4e6;
+  border: 1px solid #618685;
+  width: 50px;
+  display: inline-block;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 5px;
+  font-family: helvetica;
+  color: dimgrey;
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 1px;
+  margin-right: 1px; }
+
+.header {
+  font-family: georgia;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3; }
+
+.word {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #618685;
+  width: 400px;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: helvetica;
+  background-color: white; }
+
+.reload {
+  background-color: #d5f4e6;
+  border: 1px solid #618685;
+  font-family: helvetica;
+  color: dimgrey;
+  width: 200px;
+  height: 30px;
+  margin-left: 100px;
+  margin-top: 25px;
+  border-radius: 12px; }
+
+.hint {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid #618685;
+  width: 400px;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: helvetica;
+  background-color: white; }
+
+.used {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  height: 75px;
+  border: 1px solid #618685;
+  width: 400px;
+  margin: 5px 5px 5px 5px;
+  font-family: helvetica;
+  background-color: white; }
 
 /*# sourceMappingURL=main.css.map */

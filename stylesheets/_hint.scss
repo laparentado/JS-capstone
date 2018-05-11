@@ -1,0 +1,14 @@
+.hint{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  border: 1px solid $border-color;
+  width: 400px;
+  margin-left: 5px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-family: $main-font;
+  background-color: white;
+}

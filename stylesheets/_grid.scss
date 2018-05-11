@@ -1,0 +1,7 @@
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid $border-color;
+  width: 835px;
+  background-color: $background-color;
+}
